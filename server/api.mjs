@@ -5,6 +5,8 @@ export function validateRecords(value, seed) {
   if (!row || typeof row !== 'object') throw new Error('记录格式错误');
   for (const [k,s] of Object.entries({id:'',title:'',authors:'',journal:'',year:0,doi:'',articleUrl:'',figureUrl:'',figureNumber:'',directions:[],types:[],tags:[],previewUrl:'',previewAlt:'',status:'',question:'',composition:'',learning:'',transfer:'',boundaries:'',notes:''})) if(Array.isArray(s)?!Array.isArray(row[k])||row[k].some(x=>typeof x!=='string'):typeof row[k]!==typeof s) throw new Error(`字段 ${k} 格式不正确`);
   if (!row.id || !row.title.trim() || ids.has(row.id) || !Number.isInteger(row.year) || row.year<1000 || row.year>9999) throw new Error('ID、标题或年份不正确');
+  for(const k of ['captionEn','captionExcerpt','thumbnailUrl']) if(row[k]!==undefined&&typeof row[k]!=='string') throw new Error(`字段 ${k} 格式不正确`);
+  if(row.thumbnailUrl&&!/^https?:\/\//i.test(row.thumbnailUrl)&&!/^\/(?!\/)/.test(row.thumbnailUrl))throw new Error('缩略图链接格式不正确');
   ids.add(row.id);
   for(const k of ['articleUrl','figureUrl','previewUrl']) if(row[k]&&!/^https?:\/\//i.test(row[k])&&!(k==='previewUrl'&&/^\/(?!\/)/.test(row[k])))throw new Error('链接格式不正确');
  }
@@ -27,4 +29,3 @@ export async function api(request, store, identity, seed) {
   return ok?json({records:body.records,version}):json({error:'记录已在其他窗口更新。请先导出当前内容备份，再刷新页面后重试。'},409);
  }catch(e){return json({error:e.message||'无法保存'},400);}
 }
-
