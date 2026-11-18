@@ -45,3 +45,7 @@ export function Editor({initial,isExisting,onSave,onCancel}:{initial:Figure,isEx
  <label className="wide">自定义标签（用逗号分隔）<input value={tags} onChange={e=>{setTags(e.target.value);setDirty(true);}}/></label><label>阅读状态<select value={draft.status} onChange={e=>update('status',e.target.value)}>{Array.from(new Set(['待精读','已记笔记','已复盘',initial.status])).map(s=><option key={s}>{s}</option>)}</select></label></div>
  {error&&<p role="alert">{error}</p>}<div className="editor-actions"><button type="button" onClick={cancel}>取消</button><button disabled={saving} className="primary" type="submit">{saving?'保存中…':'保存记录'}</button></div></form>;
 }
+
+
+
+
