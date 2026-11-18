@@ -1,0 +1,69 @@
+[
+  {
+    "id": "conflict-cropland-2026",
+    "title": "Armed conflict accelerates cropland loss and food insecurity worldwide.",
+    "authors": "Li, G., Qi, W., Sun, S. et al.",
+    "journal": "Nature Food",
+    "year": 2026,
+    "doi": "10.1038/s43016-026-01436-8",
+    "articleUrl": "https://doi.org/10.1038/s43016-026-01436-8",
+    "figureUrl": "",
+    "figureNumber": "待补充",
+    "directions": [
+      "农业",
+      "interface"
+    ],
+    "types": [],
+    "tags": [
+      "耕地流失",
+      "粮食安全",
+      "武装冲突",
+      "土地利用变化"
+    ],
+    "previewUrl": "",
+    "previewAlt": "整幅 Figure 待补充",
+    "status": "待精读",
+    "question": "待精读后明确；关注武装冲突、耕地流失与粮食安全之间的证据链。",
+    "composition": "待补充：确定整幅 Figure 后，记录各面板的组成与阅读顺序。",
+    "learning": "待后续精读；重点收集其图间证据链、空间—时间尺度安排和不确定性表达。",
+    "transfer": "待精读后补充与农业遥感、interface 土地利用变化研究的关联。",
+    "boundaries": "尚未完成原文核验与精读，不据此推断具体图形、方法或结论。",
+    "notes": "此条为待补全记录。图号、图形类型及图形解读待确认；论文信息由用户提供。"
+  },
+  {
+    "id": "mulching-soc-2025-fig5",
+    "title": "Degradable film mulching increases soil carbon sequestration in major Chinese dryland agroecosystems.",
+    "authors": "Liu, Z., Zhao, C., Zhang, N. et al.",
+    "journal": "Nature Communications",
+    "year": 2025,
+    "doi": "10.1038/s41467-025-60036-5",
+    "articleUrl": "https://www.nature.com/articles/s41467-025-60036-5",
+    "figureUrl": "https://www.nature.com/articles/s41467-025-60036-5/figures/5",
+    "figureNumber": "Fig. 5",
+    "directions": [
+      "农业"
+    ],
+    "types": [
+      "地图",
+      "柱状图",
+      "复合图"
+    ],
+    "tags": [
+      "地膜",
+      "可降解地膜",
+      "SOC",
+      "深层土壤",
+      "干旱指数",
+      "空间异质性"
+    ],
+    "previewUrl": "",
+    "previewAlt": "Fig. 5 整幅图预览待添加",
+    "status": "已记笔记",
+    "question": "不同地膜处理下的土壤有机碳变化，是否在中国不同干旱背景和不同土层中呈现一致或差异化响应？",
+    "composition": "a 为干旱指数底图、采样站点和两土层三种处理下的局地 ΔSOC 小柱图；b 为表层、深层和全剖面中 SOC、植物来源碳、微生物来源碳变化的汇总比较。",
+    "learning": "在同一整幅图中组织“环境背景—样点空间位置—局地处理结果—总体汇总比较”，信息密度高但仍保留明确阅读路径。",
+    "transfer": "未来可用于 interface 中叠加地形过渡带背景、森林损失或土地利用变化位置，以及分区碳储量/碳损失结果。",
+    "boundaries": "图展示的是样点与处理试验结果，不是全国逐像元 SOC 变化制图。",
+    "notes": "以整幅 Fig. 5 为一个记录单位，a、b 面板仅在详情笔记中讨论。当前笔记按用户提供内容录入，后续可对照原文复盘。"
+  }
+]
