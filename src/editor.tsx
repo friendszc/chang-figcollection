@@ -4,7 +4,7 @@ export interface Figure {
  id: string; title: string; authors: string; journal: string; year: number; doi: string;
  articleUrl: string; figureUrl: string; figureNumber: string; directions: string[]; types: string[]; tags: string[];
  previewUrl: string; previewAlt: string; status: string; question: string; composition: string;
- captionEn?: string; captionExcerpt?: string; thumbnailUrl?: string;
+ figureTitle?: string; captionEn?: string; captionExcerpt?: string; thumbnailUrl?: string;
  learning: string; transfer: string; boundaries: string; notes: string;
 }
 
@@ -21,7 +21,7 @@ export function validate(value: unknown): Figure[] {
   if (!Number.isInteger(row.year) || row.year < 1000 || row.year > 9999) throw new Error('年份应为四位整数');
   if (row.directions.some((x:string)=>!['农业','interface'].includes(x)) || row.types.some((x:string)=>!['地图','时间序列','柱状图','流程图','复合图','其他'].includes(x))) throw new Error('研究方向或图形类型不正确');
   for (const k of ['articleUrl','figureUrl','previewUrl']) if(row[k] && !/^https?:\/\//i.test(row[k]) && !(k==='previewUrl' && /^\/(?!\/)/.test(row[k]))) throw new Error('链接应以 https:// 或 http:// 开头，图片也可使用 /images/ 路径');
-  for (const k of ['captionEn','captionExcerpt','thumbnailUrl']) if(row[k] !== undefined && typeof row[k] !== 'string') throw new Error(`字段 ${k} 格式不正确`);
+  for (const k of ['figureTitle','captionEn','captionExcerpt','thumbnailUrl']) if(row[k] !== undefined && typeof row[k] !== 'string') throw new Error(`字段 ${k} 格式不正确`);
   if(row.thumbnailUrl && !/^https?:\/\//i.test(row.thumbnailUrl) && !/^\/(?!\/)/.test(row.thumbnailUrl)) throw new Error('缩略图链接格式不正确');
   ids.add(row.id);
  }
@@ -32,7 +32,7 @@ export function downloadRecords(records: unknown, name = 'figure-notes.json') {
  const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 export function newFigure(): Figure {return {id:crypto.randomUUID(),title:'',authors:'',journal:'',year:new Date().getFullYear(),doi:'',articleUrl:'',figureUrl:'',figureNumber:'待补充',directions:['农业'],types:[],tags:[],previewUrl:'',previewAlt:'整幅 Figure 预览',status:'待精读',question:'',composition:'',learning:'',transfer:'',boundaries:'',notes:''};}
-const fields: [keyof Figure,string][]=[['title','论文完整题目'],['authors','作者'],['journal','期刊'],['year','年份'],['doi','DOI'],['articleUrl','原文链接'],['figureUrl','官方 Figure 页面链接'],['figureNumber','Figure 编号（整幅图）'],['previewUrl','预览图片链接（可留空）'],['previewAlt','图片说明'],['question','这张图回答的问题'],['composition','图形组成与阅读顺序'],['learning','值得学习的图形表达'],['transfer','迁移到我的研究'],['boundaries','方法与结论边界'],['notes','备注'],['captionEn','Figure caption（英文原文，由您提供）'],['thumbnailUrl','缩略图链接（可选；高清图仍使用预览图片链接）']];
+const fields: [keyof Figure,string][]=[['title','论文完整题目'],['authors','作者'],['journal','期刊'],['year','年份'],['doi','DOI'],['articleUrl','原文链接'],['figureUrl','官方 Figure 页面链接'],['figureNumber','Figure 编号（整幅图）'],['previewUrl','预览图片链接（可留空）'],['previewAlt','图片说明'],['question','这张图回答的问题'],['composition','图形组成与阅读顺序'],['learning','值得学习的图形表达'],['transfer','迁移到我的研究'],['boundaries','方法与结论边界'],['notes','备注'],['figureTitle','Figure 英文短标题（完整）'],['captionEn','Figure caption（英文原文，由您提供）'],['thumbnailUrl','缩略图链接（可选；高清图仍使用预览图片链接）']];
 export function Editor({initial,isExisting,onSave,onCancel}:{initial:Figure,isExisting:boolean,onSave:(r:Figure)=>Promise<void>,onCancel:()=>void}){
  const [draft,setDraft]=useState(initial); const [tags,setTags]=useState(initial.tags.join('，'));const [error,setError]=useState('');const [dirty,setDirty]=useState(false); const [saving,setSaving]=useState(false);
  const update=(key:keyof Figure,value:unknown)=>{setDraft(p=>({...p,[key]:value}));setDirty(true);};

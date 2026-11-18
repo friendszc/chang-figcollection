@@ -35,8 +35,9 @@
     "transfer": "可借鉴到山地—平原过渡带：先交代地形与界面范围，再用双变量地图表达森林损失与碳损失的共同格局，最后放大典型分区。迁移时需明确统计单元、面积归一化方式和分级阈值，避免把行政区统计误读为逐像元结果。",
     "boundaries": "空间重叠本身不能证明因果。b–j 是行政单元分类，不意味着单元内部每个像元都发生相同程度的冲突或耕地损失。冲突数据经过事件类型、时间与定位精度筛选；缺少系统覆盖的地区被排除，空白不能直接解释为没有冲突。",
     "notes": "2026-11-18 核对官方整图与图注；完整方法正文待精读。预览外链来自 Springer Nature，保留原图、不拆面板，版权归原权利人。研究方向中的 interface 表示本人的迁移用途，非论文直接研究对象。",
-    "captionEn": "",
-    "captionExcerpt": "Spatial overlaps between global armed conflict events…"
+    "captionEn": "Fig. 1: Spatial overlaps between global armed conflict events and cropland loss. a, Global conflict-event density from 2000 to 2020, calculated as the number of retained armed conflict events within a 5-km-radius moving window divided by the window area and expressed as events km−2. A value of 0.01 represents a very low non-zero event density, approximately equivalent to one event within a 5-km-radius window. Conflict-event density was calculated from ACLED events meeting the specified event-type, temporal-precision and geospatial-precision criteria. Very light or zero-density areas indicate few or no retained conflict events; some regions were additionally excluded because systematic ACLED coverage was unavailable throughout the study period, as described in the Methods. b, Bivariate spatial relationship between conflict intensity and cropland loss from 2000 to 2020 at the fifth-level administrative-unit scale. Conflict intensity and cropland loss were each classified into low, medium and high levels using tertiles of the non-zero distribution across administrative units. The colours represent combinations of these two variables. Shading indicates the class assigned to an administrative unit and does not imply that all locations within that unit experienced the same level of conflict or cropland loss. c–j, Zoomed-in views of selected hotspot regions outlined in b: Mexico and Central America (c); northern and central South America (d); West Africa and the Sahel (e); East Africa and the Horn of Africa (f); Ukraine and surrounding areas (g); the Middle East (h); Afghanistan and Pakistan (i); and eastern South Asia and Myanmar (j). c–j use the same bivariate colour scheme as b and show regional details for areas where conflict intensity and/or cropland loss were concentrated. Shading indicates the class assigned to each administrative unit and does not imply that all locations within that unit experienced the same level of conflict or cropland loss. Basemaps generated using ArcGIS Pro 3.4 with data from Natural Earth (https://www.naturalearthdata.com) (a) and GADM (https://gadm.org/data.html) (b–j).",
+    "captionExcerpt": "Spatial overlaps between global armed conflict events…",
+    "figureTitle": "Spatial overlaps between global armed conflict events and cropland loss."
   },
   {
     "id": "conflict-cropland-2026-fig2",
@@ -77,8 +78,9 @@
     "transfer": "可用于界面地区的土地利用政策、设施农业扩张或其他明确事件：先展示变化分布，再画事件时间效应、地形/分区异质性及缓冲尺度敏感性。需要有可辩护的处理定义、对照组和事件时间；不能把所有森林损失简单视为外生处理。",
     "boundaries": "a 是描述性对比；因果解释需要进一步核对 DID 识别假设、平行趋势、处理定义及对照选择。b 不是普通日历年时间序列；f 比较的是不同半径的缓冲区模型，不是同心环带效应。c–f 区间含零不等于证明没有效应。不同回归的缓冲区—年份观测可能重复，样本数不能直接当独立事件数。",
     "notes": "2026-11-18 核对官方整图与图注；完整方法正文待精读。图形类型“其他”包括小提琴图与点区间图，“时间序列”用于检索事件时间动态图。预览外链来自 Springer Nature，版权归原权利人；所有 a–f 面板属于同一条 Fig. 2 记录。",
-    "captionEn": "",
-    "captionExcerpt": "Impact of armed conflict events on cropland changes."
+    "captionEn": "Fig. 2: Impact of armed conflict events on cropland changes. a, The distribution of cropland area across 9,749,817 buffer-year observations from 464,277 event-centred 5-km buffers during 2000–2020. The no-conflict and conflict groups comprised n = 8,821,175 and n = 928,642 buffer-year observations, respectively. Filled and open circles indicate means and medians, thick vertical lines indicate interquartile ranges (25th–75th percentiles), and violin widths represent within-group densities. Δmean denotes the descriptive difference in means (conflict minus no conflict). b, Dynamic average treatment effects on the treated (ATTs) estimated using the Callaway–Sant’Anna DID framework (n = 9,749,817 buffer-year observations). Event time is indexed relative to the effective treatment year, defined as 1 year after conflict occurrence; k = −1 denotes the conflict year and k = 0 the first effective post-treatment year. The vertical dotted line marks conflict occurrence. Points show ATT estimates and vertical bars indicate 95% CIs. c, Estimated effects across 15 world regions, ordered by effect size; n values shown in the labels denote buffer-year observations included in each regional regression. d, Estimated effects by conflict type, ordered by effect size; n values denote buffer-year observations included in each conflict-type-specific regression. e, Estimated effects by conflict-frequency decile. Conflict-exposed buffers were grouped according to the total number of conflict events recorded during 2000–2020; categories 1 and 10 represent the lowest- and highest-frequency deciles, respectively. Each frequency-specific DID regression included the corresponding conflict-frequency group together with a common set of comparison observations not assigned to a frequency category. Sample sizes for the corresponding regressions for categories 1–10 were n = 4,554,711, 4,568,403, 4,544,169, 4,558,701, 4,548,978, 4,554,396, 4,559,142, 4,552,779, 4,567,332 and 4,543,287 buffer-year observations, respectively. f, Estimates from separate DID models using buffer radii of 1–10 km. Sample sizes for the corresponding regressions at radii of 1–10 km were n = 9,749,817, 9,482,440, 9,576,124, 9,662,597, 9,749,817, 9,696,912, 9,704,944, 9,713,595, 9,719,338 and 9,721,107 buffer-year observations, respectively. In b–f, coefficients and confidence limits from models using log-transformed cropland area as the outcome are multiplied by 100 and interpreted as approximate percentage changes. Filled markers in c–f indicate 95% CIs excluding zero and open markers indicate CIs including zero. Statistical inference used two-sided asymptotic z-tests in b and two-sided t-tests in c–f.",
+    "captionExcerpt": "Impact of armed conflict events on cropland changes.",
+    "figureTitle": "Impact of armed conflict events on cropland changes."
   },
   {
     "id": "mulching-soc-2025-fig5",
@@ -118,8 +120,9 @@
     "transfer": "未来可用于 interface 中叠加地形过渡带背景、森林损失或土地利用变化位置，以及分区碳储量/碳损失结果。 可将地图上的局地结果与旁侧统一单位的分区汇总配对；若借鉴堆叠表达，需要核对各来源项是否覆盖总量并说明剩余部分。",
     "boundaries": "这是 17 个干旱农田站点土柱在设定气候条件下的培养结果，不是全国逐像元 SOC 变化制图，也不是直接观测到的未来全国碳损失。方法中先预培养 45 天，再培养 367 天；设置 15 °C、55% 湿度，并按 SSP5-8.5 的 2100 年水平调整 CO₂。结论受样点代表性、实验条件及碳来源估算方法约束。",
     "notes": "2026-11-18 对照官方整图、图注及正文培养方法修订。重要更正：ΔSOC 是培养前减培养后，表示损失；b 的误差线为半个标准误。图像作者 Liu 等，来源 Nature Communications 16, 5029 (2025)，DOI 10.1038/s41467-025-60036-5；文章标注 CC BY-NC-ND 4.0。使用官方未修改整图外链，a、b 不拆分收录。",
-    "captionEn": "",
-    "captionExcerpt": "Contributions of microbial- and plant-derived C…"
+    "captionEn": "Fig. 5: Contributions of microbial- and plant-derived C to SOC loss across dry agroecosystems under climate change. a Spatial distributions of sampling sites and ΔSOC in the topsoil and subsoil under different mulching practices. Error bars represent standard error (n = 3). b Changes in SOC, microbial- and plant-derived C storage during the incubation experiment. Error bars represent half of the standard error, and lowercase letters indicate significant differences at p = 0.05 (n = 51). SOC soil organic carbon, Δmicrobial-derived C soil microbial-derived C in sampling sites before the incubation experiment minus microbial-derived C after the experiment, ΔPlant-derived C soil plant-derived C in sampling sites before the incubation experiment minus plant-derived C after the experiment, ΔSOC SOC in sampling sites before the incubation experiment minus SOC after the experiment, NM conventional tillage without mulching, PM plastic film mulching, DM degradable film mulching. Source data are provided as a Source Data file. The aridity index data used in the figure were obtained from the Global Aridity Index and Potential Evapotranspiration Database–Version 3 (Global-AI_PET_v3)29.",
+    "captionExcerpt": "Contributions of microbial- and plant-derived C…",
+    "figureTitle": "Contributions of microbial- and plant-derived C to SOC loss across dry agroecosystems under climate change."
   },
   {
     "id": "greenhouse-global-2024-fig1",
@@ -157,8 +160,9 @@
     "transfer": "可用于设施农业图库的总览图：区域温室分布＋典型识别实例＋地形/干旱梯度。interface 研究可将末端统计改为距山地—平原边界的距离，并同时报告网格有效面积。",
     "boundaries": "图展示温室基础设施覆盖，不直接代表产量、利用率或经营绩效。国家聚合与网格阈值可能掩盖零散设施；GDP、干旱程度与温室分布的并列关系不能直接解释为因果。",
     "notes": "2026-11-18 收录。已核对官方整图、图注与摘要；完整方法正文待精读。 预览为 Springer Nature 官方整图外链，版权归原权利人；不拆分面板。迁移建议为个人研究构想，不是原论文结论。",
-    "captionEn": "",
-    "captionExcerpt": "A global inventory of greenhouse cultivation."
+    "captionEn": "Fig. 1: A global inventory of greenhouse cultivation. a, The extent of greenhouses aggregated to the country level from predictions based on 3 m resolution imagery (Methods). Major clusters (>100 ha) are shown in the map. The background bathymetry layer is from Natural Earth (https://www.naturalearthdata.com/). b–e, Examples of predicted greenhouse infrastructures as seen in Google Earth (Imagery © 2024 CNES/Airbus, Landsat/Copernicus, Maxar Technologies, Map data ©2024) in Almería, Spain (36.71° N, 2.7° W) (b), Mountain near Mexico City, Mexico (18.99° N, 99.58° E) (c), Lake Muhazi, Rwanda (1.86° S, 30.4° E) (d) and Heilongjiang, China (46.35° N, 123.44° E) (e). f, The Global North–South divide ordered by the percentage of total greenhouse cultivation coverage for both major and minor clusters. The error bar is the standard deviation for five buffer zones (n = 6, Methods). The standard deviations as error values are presented symmetrically from the mean. g, The cumulative share of greenhouse cultivation as a function of gross domestic product (GDP) per capita in the Global South and North. We refer to Supplementary Table 8 for the complete list. h, The greenhouse cultivation cover along global aridity65 and elevation66 gradients (bin 200 m) for major and minor clusters in the Global North and South. All above analyses were conducted using 1 × 1 km2 grid cells of greenhouse coverage larger than 1 ha.",
+    "captionExcerpt": "A global inventory of greenhouse cultivation.",
+    "figureTitle": "A global inventory of greenhouse cultivation."
   },
   {
     "id": "greenhouse-global-2024-fig2",
@@ -197,7 +201,8 @@
     "boundaries": "距离剖面是空间关系而非时间变化，因此不归入时间序列。热度、耕地比例和温室面积不是同一指标；图形关联不能直接证明城市需求或扶贫政策的影响。图注 c 明确为全球城市，但末句概括为中国网格，范围表述存在歧义，精读方法时需再核对。",
     "notes": "2026-11-18 收录。已核对官方整图、图注与摘要；完整方法正文待精读。 预览为 Springer Nature 官方整图外链，版权归原权利人；不拆分面板。迁移建议为个人研究构想，不是原论文结论。",
     "captionEn": "",
-    "captionExcerpt": "Spatial characteristics of greenhouse cultivation in China."
+    "captionExcerpt": "Spatial characteristics of greenhouse cultivation in China.",
+    "figureTitle": "Spatial characteristics of greenhouse cultivation in China."
   },
   {
     "id": "greenhouse-global-2024-fig3",
@@ -237,7 +242,8 @@
     "boundaries": "研究对象为选定的 65 个大型集群，不是所有全球温室的完整历史。Almería 和 Zuid-Holland 的早期年份另行赋值。可见的初次出现受影像分辨率影响；PlanetScope 与 Landsat 方法不同，面积不能直接拼成一致序列。",
     "notes": "2026-11-18 收录。已核对官方整图、图注与摘要；完整方法正文待精读。 预览为 Springer Nature 官方整图外链，版权归原权利人；不拆分面板。迁移建议为个人研究构想，不是原论文结论。",
     "captionEn": "",
-    "captionExcerpt": "Dynamics of areal expansion in greenhouse cultivation…"
+    "captionExcerpt": "Dynamics of areal expansion in greenhouse cultivation…",
+    "figureTitle": "Dynamics of areal expansion in greenhouse cultivation for the Global North and South."
   },
   {
     "id": "global-land-change-2018-fig1",
@@ -276,7 +282,8 @@
     "boundaries": "树冠覆盖不等于按土地用途定义的森林面积，低矮植被也不等于耕地。粗分辨率混合像元会掩盖局部转变；趋势筛选不能说明未着色区域完全没有变化。该图不直接给出驱动因素或碳排放。",
     "notes": "2026-11-18 收录。已核对官方整图、图注及正文相关定义。官网提示本文已有作者更正，当前收录使用现行官方图页。农业 / interface 为个人研究检索与迁移分类。 预览为 Springer Nature 官方整图外链，版权归原权利人；不拆分面板。迁移建议为个人研究构想，不是原论文结论。",
     "captionEn": "",
-    "captionExcerpt": "A satellite-based record of global TC…"
+    "captionExcerpt": "A satellite-based record of global TC…",
+    "figureTitle": "A satellite-based record of global TC, SV and BG cover from 1982 to 2016."
   },
   {
     "id": "global-land-change-2018-fig2",
@@ -315,7 +322,8 @@
     "boundaries": "纬带内的经向差异被汇总，不能据此定位具体热点。绝对面积受每个纬带可用陆地及初始覆盖面积影响；跨梯度比较强度时应补充分母归一化。净增益不意味着没有森林损失。",
     "notes": "2026-11-18 收录。已核对官方整图、图注及正文相关定义。官网提示本文已有作者更正，当前收录使用现行官方图页。农业 / interface 为个人研究检索与迁移分类。 预览为 Springer Nature 官方整图外链，版权归原权利人；不拆分面板。迁移建议为个人研究构想，不是原论文结论。",
     "captionEn": "",
-    "captionExcerpt": "Latitudinal profiles of change in land cover…"
+    "captionExcerpt": "Latitudinal profiles of change in land cover…",
+    "figureTitle": "Latitudinal profiles of change in land cover from 1982 to 2016."
   },
   {
     "id": "global-land-change-2018-fig3",
@@ -354,7 +362,8 @@
     "boundaries": "颜色不是点数或概率，而是分箱后的变化面积。分箱和初始状态选取会影响形态；全球与分组色标不能直接按颜色深浅比较。图形形态可提示过程，但不能独立证明毁林、农业集约化等驱动。",
     "notes": "2026-11-18 收录。已核对官方整图、图注及正文相关定义。官网提示本文已有作者更正，当前收录使用现行官方图页。农业 / interface 为个人研究检索与迁移分类。 预览为 Springer Nature 官方整图外链，版权归原权利人；不拆分面板。迁移建议为个人研究构想，不是原论文结论。",
     "captionEn": "",
-    "captionExcerpt": "Intensity plots of gross area of loss…"
+    "captionExcerpt": "Intensity plots of gross area of loss…",
+    "figureTitle": "Intensity plots of gross area of loss and gain in TC, SV and BG cover during 1982–2016."
   },
   {
     "id": "sea-mountain-forest-2021-fig1",
@@ -394,7 +403,8 @@
     "boundaries": "发生损失地块的平均海拔升高，不等于每个位置都在向上推进；平均数可能受区域构成变化影响。森林损失不是扣除恢复后的净变化。转折点和趋势显著性本身不证明某项政策或驱动导致变化。",
     "notes": "2026-11-18 收录。已核对官方整图、图注与摘要；山地划分及碳核算的完整方法待精读。interface 为个人迁移分类，原图比较的是山地与低地。 预览为 Springer Nature 官方整图外链，版权归原权利人；不拆分面板。迁移建议为个人研究构想，不是原论文结论。",
     "captionEn": "",
-    "captionExcerpt": "Time series of forest-loss area and associated topography…"
+    "captionExcerpt": "Time series of forest-loss area and associated topography…",
+    "figureTitle": "Time series of forest-loss area and associated topography across SEA during the period 2001–2019."
   },
   {
     "id": "sea-mountain-forest-2021-fig3",
@@ -434,6 +444,7 @@
     "boundaries": "碳损失由森林损失和碳密度等数据估算，不是直接测得的全部即时大气排放，也不能等同于完整生态系统净碳收支。a 中误差线表示线性趋势标准误，不是全部碳核算误差。精读时需核对生物量范围、转换系数和空间分辨率。",
     "notes": "2026-11-18 收录。已核对官方整图、图注与摘要；山地划分及碳核算的完整方法待精读。interface 为个人迁移分类，原图比较的是山地与低地。 预览为 Springer Nature 官方整图外链，版权归原权利人；不拆分面板。迁移建议为个人研究构想，不是原论文结论。",
     "captionEn": "",
-    "captionExcerpt": "Time series of forest carbon loss and associated topography…"
+    "captionExcerpt": "Time series of forest carbon loss and associated topography…",
+    "figureTitle": "Time series of forest carbon loss and associated topography across SEA during the period 2001–2019."
   }
 ]
